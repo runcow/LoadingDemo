@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/no_network_dark" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="网络请求失败"
+        android:textSize="16sp"
+        android:textColor="@color/theme_black"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="请检查您的网络,重新加载吧"
+        android:textSize="15sp"
+        android:textColor="@color/default_gray"/>
+
+    <TextView
+        android:id="@+id/tv_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_border_gray_6"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="重新加载"
+        android:textSize="16sp"
+        android:textColor="@color/theme_black"/>
+
+</RelativeLayout>
